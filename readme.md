@@ -1,4 +1,3 @@
-```markdown
 # Ranking de Risco de Avarias em Máquinas de Injeção de Polímeros
 
 Este projeto implementa uma pipeline automatizada para estimar o risco de avarias em máquinas de injeção de polímeros (MIPs) com base exclusivamente no histórico de ordens de trabalho (OT). O modelo seleciona automaticamente o melhor modelo de contagem (Poisson, Binomial Negativa, ZIP, ZINB) e modelos de Machine Learning (Random Forest, SVR) por máquina, validando temporalmente o desempenho.
@@ -7,7 +6,7 @@ Este projeto implementa uma pipeline automatizada para estimar o risco de avaria
 
 ## 📁 Estrutura do Projeto
 
-
+```
 ranking_maquinas/
 │
 ├── data/
@@ -27,15 +26,14 @@ ranking_maquinas/
 ├── run_ranking.py                    			# Script principal
 ├── requirements.txt                  			# Dependências do projeto
 └── README.md                         			# Este ficheiro
-
-
+```
 ## 📂 Formato dos dados de entrada
 
 O script espera um ficheiro Excel na pasta `data/` com o nome `Work_Orders_MIP.xlsx`, contendo uma worksheet chamada `work_orders` com as seguintes colunas:
 
 | Coluna | Descrição |
 |--------|-----------|
-| `MCH_CODE` | Identificador da máquina (ex.: MIP0115) |
+| `MCH_CODE` | Identificador da máquina (ex.: MCH0000) |
 | `WORK_TYPE_DESC` | Tipo de ordem de trabalho (ex.: manutenção corretiva, setup) |
 | `REG_DATE` | Data/hora de registo da ordem de trabalho |
 | `ERR_DESCR` | Descrição textual da avaria ou intervenção |
@@ -109,7 +107,7 @@ Após a execução, os ficheiros `outputs/ranking_risco.csv` e `outputs/ranking_
 | Coluna | Descrição |
 |--------|-----------|
 | `rank` | Posição no ranking (1 = maior risco) |
-| `machine` | Identificador da máquina (ex.: MIP0115) |
+| `machine` | Identificador da máquina (ex.: MCH0000) |
 | `model` | Modelo selecionado para essa máquina |
 | `best_features` | Subconjunto de variáveis temporais selecionadas |
 | `tss_mae_mean` | MAE médio na validação temporal |
@@ -149,7 +147,7 @@ As principais bibliotecas utilizadas são:
 **Willian Pegorin**  
 Mestrado em Matemática e Aplicações – Universidade de Aveiro  
 Orientador: Prof. Nelson Vieira | Co-orientador: Prof. Miguel Zilhão  
-Supervisores na OLI: Engenheiro Paulo Ribeiro e Renata Loio
+Supervisores na Empresa:  Paulo Ribeiro e Renata Loio
 
 ---
 
