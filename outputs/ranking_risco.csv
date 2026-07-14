@@ -1,0 +1,2 @@
+rank,machine,model,best_features,tss_mae_mean,tss_mae_std,cv,score,lambda_hat,fallback,data_geracao
+1,MCH0000,SVM_RBF,"['trend_15', 'trend_30']",0.0000897013983023,0.00002460901645997,0.0000608995501015,0.00005200590653227,0.00001402996214236,False,20260714_133522
