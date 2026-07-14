@@ -7,7 +7,7 @@ Este projeto implementa uma pipeline automatizada para estimar o risco de avaria
 
 ## 📁 Estrutura do Projeto
 
-```
+
 ranking_maquinas/
 │
 ├── data/
@@ -27,7 +27,7 @@ ranking_maquinas/
 ├── run_ranking.py                    			# Script principal
 ├── requirements.txt                  			# Dependências do projeto
 └── README.md                         			# Este ficheiro
-```
+
 
 ## 📂 Formato dos dados de entrada
 
