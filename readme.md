@@ -43,7 +43,7 @@ O script espera um ficheiro Excel na pasta `data/` com o nome `Work_Orders_MIP.x
 | `REAL_F_DATE` | Data/hora real de fim da intervenção |
 | `WO_STATUS_ID` | Estado da ordem de trabalho (ex.: FINISHED, CANCELED) |
 
-> **Nota:** Os dados fornecidos neste repositório são apenas um exemplo da estrutura esperada. Os dados reais da OLI não são partilhados por razões de confidencialidade.
+> Nota: Os dados fornecidos neste repositório são apenas um exemplo da estrutura esperada. Os dados reais da OLI não são partilhados por razões de confidencialidade.
 
 ---
 
